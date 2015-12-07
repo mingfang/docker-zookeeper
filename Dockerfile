@@ -21,7 +21,7 @@ RUN add-apt-repository ppa:webupd8team/java -y && \
     apt-get install -y oracle-java8-installer
 ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
 
-RUN wget -O - http://www.us.apache.org/dist/zookeeper/zookeeper-3.4.6/zookeeper-3.4.6.tar.gz | tar zx
+RUN wget -O - http://www.us.apache.org/dist/zookeeper/zookeeper-3.4.7/zookeeper-3.4.7.tar.gz | tar zx
 RUN mv zookeeper* zookeeper
 
 COPY zoo.cfg /zookeeper/conf/
