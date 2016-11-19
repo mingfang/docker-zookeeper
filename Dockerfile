@@ -35,4 +35,3 @@ COPY zoo.cfg /zookeeper/conf/
 COPY sv /etc/service
 ARG BUILD_INFO
 LABEL BUILD_INFO=$BUILD_INFO
-
